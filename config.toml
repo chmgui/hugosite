@@ -1,0 +1,30 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Brian's Portfolio2 B"
+theme = "basic"
+[params]
+author = "Brian Hogan"
+description = "My portfolio site"
+gh_url = "https://api.github.com/users"
+gh_user = "chmgui"
+keywords = "SSG Hugo Eleventy Website Opensource"
+[permalinks]
+posts = "posts/:year/:month/:slug/"
+year = "/posts/:slug/"
+month = "/posts/:slug/"
+[taxonomies]
+year = "year"
+month = "month"
+tag = "tags"
+category = "categories"
+Paginate = 10
+[related]
+threshold = 99.99
+includeNewer = false
+toLower = false
+[[related.indices]]
+name = "keywords"
+weight = 100.0
+[[related.indices]]
+name = "date"
+weight = 0.01
